@@ -1,0 +1,27 @@
+{
+  "name": "messages-api",
+  "version": "0.0.1",
+  "description": "Server Application for receive and send messages of Android Application ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.10.2"
+  },
+  "keywords": [
+    "node.js",
+    "mongo",
+    "mongoose",
+    "express"
+  ],
+  "author": "Natan Severianos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3"
+  }
+}
