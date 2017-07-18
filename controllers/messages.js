@@ -3,7 +3,12 @@ module.exports = app => {
 
   var MessagesController = {
     create: (req, res) => {
-      MessagesModel.create(req.body, (err, result) => {
+      var message = {
+        user: req.query.user,
+        message: req.query.message
+      }
+
+      MessagesModel.create(message, (err, result) => {
         if(err) return res.status(500).json({ "Error": err })
         return res.status(200).json(result);
       })
